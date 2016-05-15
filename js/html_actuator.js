@@ -86,6 +86,10 @@ HTMLActuator.prototype.addTile = function (tile) {
     var sound256 = new buzz.sound("sounds/minune.mp3");  // la      start() (hu)
     var sound512 = new buzz.sound("sounds/guta.mp3");  // la      start() (hu)
     var sound1024 = new buzz.sound("sounds/mocanu.mp3");  // la      start() (hu)
+    sound128.preload='auto';
+    sound256.preload='auto';
+    sound512.preload='auto';
+    sound1024.preload='auto';
     // var sound2048 = new buzz.sound("sounds/salam.mp3");  // la      start() (hu)
     buzz.all().setVolume(volume);
 
