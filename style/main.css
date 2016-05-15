@@ -812,9 +812,9 @@ hr {
       background-size:cover !important;
       text-align: right !important;
       color:#fff;
-      padding-top:30px !important;
-      overflow: hidden !important;
-      height:77px !important;
+      font-size:1em !important;
+      /*padding-top:30px !important;*/
+      /*overflow: hidden !important;*/
+      /*height:77px !important;*/
       /*font-size: 2em !important;*/
     }
-    
