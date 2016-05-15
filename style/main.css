@@ -760,20 +760,25 @@ hr {
 
 
 /*smobx1*/
+    .text-inauntru{
+      /*text-align: right !important;*/
+    }
     .tile-nr-2{
       background-image: url('../img/copilul-de-aur.jpg') !important;
     }
+
     .tile-nr-4{
-      background-image: url('../img/guta.jpg') !important;
+      background-image: url('../img/roxana.jpg') !important;
     }
     .tile-nr-8{
-      background-image: url('../img/minune.jpg') !important;
+      background-image: url('../img/vijelie.jpg') !important;
     }
     .tile-nr-16{
-      background-image: url('../img/salam.jpg') !important;
+      background-image: url('../img/liviu-guta.jpg') !important;
     }
     .tile-nr-32{
-      background-image: url('../img/mocanu.jpg') !important;
+      background-image: url('../img/babi.jpg') !important;
+
     }
     .tile-nr-64{
       background-image: url('../img/cercel.jpg') !important;
@@ -782,17 +787,16 @@ hr {
       background-image: url('../img/biju.jpg') !important;
     }
     .tile-nr-256{
-      background-image: url('../img/valcea.jpg') !important;
+      background-image: url('../img/minune.jpg') !important;
     }
     .tile-nr-512{
-      background-image: url('../img/roxana.jpg') !important;
+      background-image: url('../img/guta.jpg') !important;
     }
-    .tile-nr-1048{
-      background-image: url('../img/babi.jpg') !important;
+    .tile-nr-1024{
+      background-image: url('../img/mocanu.jpg') !important;
     }
-
     .tile-nr-2048{
-      background-image: url('../img/liviu-guta.jpg') !important;
+      background-image: url('../img/salam.jpg') !important;
     }
     .tile-nr-2,
     .tile-nr-4,
@@ -806,4 +810,11 @@ hr {
     .tile-nr-1024,
     .tile-nr-2048{
       background-size:cover !important;
+      text-align: right !important;
+      color:#fff;
+      padding-top:30px !important;
+      overflow: hidden !important;
+      height:77px !important;
+      /*font-size: 2em !important;*/
     }
+    

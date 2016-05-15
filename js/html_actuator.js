@@ -51,6 +51,7 @@ HTMLActuator.prototype.addTile = function (tile) {
 
   var wrapper   = document.createElement("div");
   var inner     = document.createElement("div");
+
   var position  = tile.previousPosition || { x: tile.x, y: tile.y };
   var positionClass = this.positionClass(position);
 
@@ -73,18 +74,58 @@ HTMLActuator.prototype.addTile = function (tile) {
     if (tile.value > 1023 && tile.value < 1025) inner.classList.add("tile-nr-1024");
     if (tile.value > 2047 && tile.value < 2049) inner.classList.add("tile-nr-2048");
 
+    ////////////////// test sunete
+    var volume = 10;
+    // var sound2 = new buzz.sound("sounds/cristi.mp3");         // jump()
+    // var sound4 = new buzz.sound("sounds/4.mp3");       // trece prin pipes()
+    // var sound8 = new buzz.sound("sounds/sfx_hit.mp3");           // hit()
+    // var sound16 = new buzz.sound("sounds/cristi.mp3");           // 1s dupa hit()
+    // var sound32 = new buzz.sound("sounds/cristi.mp3");  // la      start() (hu)
+    // var sound64 = new buzz.sound("sounds/cristi.mp3");  // la      start() (hu)
+    var sound128 = new buzz.sound("sounds/biju.mp3");  // la      start() (hu)
+    var sound256 = new buzz.sound("sounds/minune.mp3");  // la      start() (hu)
+    var sound512 = new buzz.sound("sounds/guta.mp3");  // la      start() (hu)
+    var sound1024 = new buzz.sound("sounds/mocanu.mp3");  // la      start() (hu)
+    // var sound2048 = new buzz.sound("sounds/salam.mp3");  // la      start() (hu)
+    buzz.all().setVolume(volume);
+
+
+     if(tile.value === 128){
+       sound128.play();
+       tile.value = tile.value + 0.001;
+     }
+     if(tile.value === 256){
+       sound256.play();
+       tile.value = tile.value + 0.001;
+     }
+     if(tile.value === 512){
+       sound512.play();
+       tile.value = tile.value + 0.001;
+     }
+     if(tile.value === 1024){
+       sound1024.play();
+       tile.value = tile.value + 0.001;
+     }
+
+
+
+
+
+
+    ///////////////////// test sunete
+
+
 
     if(tile.value > 31){ // conditie sa apara ceva dupa ce apare tile cu nr 32
       // alert();
     }
 /// smobx1 end
 
-
+  // $(".tile-inner").wrapInner( "<div class='text-inauntru'></div>");
 
   this.applyClasses(wrapper, classes);
-
   inner.classList.add("tile-inner");
-  inner.textContent = tile.value;
+  inner.textContent = parseInt(tile.value);
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
@@ -128,8 +169,8 @@ HTMLActuator.prototype.positionClass = function (position) {
 HTMLActuator.prototype.updateScore = function (score) {
   this.clearContainer(this.scoreContainer);
 
-  var difference = score - this.score;
-  this.score = score;
+  var difference = parseInt(score) - this.score;
+  this.score = parseInt(score);
 
   this.scoreContainer.textContent = this.score;
 
@@ -148,7 +189,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "You win!" : "Game over!";
+  var message = won ? "Ai castigat!" : "Ai pierdut!";
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
