@@ -79,7 +79,8 @@
     <icon src="assets/icons/android/mimap-xxxhdpi/lc_launcher.png" platform="android" qualifier="fr-xxhdpi" />
 
     <!-- iPhone 6 / 6+ -->
-    <icon src="assets/icons/ios/iTunesArtwork.png" platform="ios" width="180" height="180" />
+    <!-- <icon src="assets/icons/ios/iTunesArtwork.png" platform="ios" width="180" height="180" /> -->
+    <icon src="img/logo-bun.png" platform="ios" width="180" height="180" />
 
     <!-- iPhone / iPod Touch  -->
     <icon src="assets/icons/ios/iTunesArtwork.png" platform="ios" width="60" height="60" />
