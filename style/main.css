@@ -91,10 +91,10 @@ h1.title {
     animation-fill-mode: both; }
 
 .score-container:after {
-  content: "Score"; }
+  content: "Scor"; }
 
 .best-container:after {
-  content: "Best"; }
+  content: "Highscore"; }
 
 p {
   margin-top: 0;
@@ -813,8 +813,8 @@ hr {
       text-align: right !important;
       color:#fff;
       /*font-size:1em !important;*/
-      padding-top:30px !important;
+      /*padding-top:30px !important;*/
       overflow: hidden !important;
-      height:77px !important;
-      font-size: 1.8em !important;
+      /*height:57.5px !important;*/
+      font-size: .7em !important;
     }
