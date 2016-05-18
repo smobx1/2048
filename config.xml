@@ -14,10 +14,10 @@
     <!-- <gap:plugin name="cordova-plugin-admob" source="npm" /> -->
 
 
-    <preference name="permissions" value="none"/>
+    <!-- <preference name="permissions" value="none"/>
     <preference name="android-build-tool" value="gradle" />
     <gap:plugin name="cordova-plugin-admobpro" source="npm" />
-    <framework src="com.google.android.gms:play-services-ads:+" />
+    <framework src="com.google.android.gms:play-services-ads:+" /> -->
 
     <!-- end plugin -->
 
