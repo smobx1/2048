@@ -4,12 +4,12 @@ var admobid = {};
 if( /(android)/i.test(navigator.userAgent) ) {
   admobid = { // for Android
     // banner: 'ca-app-pub-6869992474017983/9375997553',
-    interstitial: 'ca-app-pub-2789022727093400/2657332372'
+    interstitial: 'ca-app-pub-2785420618056516/8722348780'
   };
 } else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
   admobid = { // for iOS
     // banner: 'ca-app-pub-6869992474017983/4806197152',
-    interstitial: 'ca-app-pub-2789022727093400/5610798779'
+    interstitial: 'ca-app-pub-2785420618056516/2675815188'
   };
 } else {
   admobid = { // for Windows Phone
@@ -44,14 +44,14 @@ function initApp() {
   // }, 2000);
 
     // this will create a banner on startup
-          AdMob.createBanner( {
-            adId: admobid.banner,
-            position: AdMob.AD_POSITION.BOTTOM_CENTER,
-            // isTesting: true, // TODO: remove this line when release
-            overlap: false,
-            offsetTopBar: false,
-            bgColor: 'black'
-          } );
+          // AdMob.createBanner( {
+          //   adId: admobid.banner,
+          //   position: AdMob.AD_POSITION.BOTTOM_CENTER,
+          //   // isTesting: true, // TODO: remove this line when release
+          //   overlap: false,
+          //   offsetTopBar: false,
+          //   bgColor: 'black'
+          // } );
 
     function someAdCode() {
               // this will load a full screen ad on startup
