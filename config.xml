@@ -71,12 +71,12 @@
 <!-- END SPLASH -->
 
     <!-- ANDROID ICONS -->
-    <icon src="img/android/mimap-ldpi/lc_launcher.png" platform="android" qualifier="ldpi" />
-    <icon src="img/android/mimap-mdpi/lc_launcher.png" platform="android" qualifier="mdpi" />
-    <icon src="img/android/mimap-hdpi/lc_launcher.png" platform="android" qualifier="hdpi" />
-    <icon src="img/android/mimap-xhdpi/lc_launcher.png" platform="android" qualifier="xhdpi" />
-    <icon src="img/android/mimap-xxhdpi/lc_launcher.png" platform="android" qualifier="xxhdpi" />
-    <icon src="img/android/mimap-xxxhdpi/lc_launcher.png" platform="android" qualifier="fr-xxhdpi" />
+    <icon src="img/android/mimap-ldpi/ic_launcher.png" platform="android" qualifier="ldpi" />
+    <icon src="img/android/mimap-mdpi/ic_launcher.png" platform="android" qualifier="mdpi" />
+    <icon src="img/android/mimap-hdpi/ic_launcher.png" platform="android" qualifier="hdpi" />
+    <icon src="img/android/mimap-xhdpi/ic_launcher.png" platform="android" qualifier="xhdpi" />
+    <icon src="img/android/mimap-xxhdpi/ic_launcher.png" platform="android" qualifier="xxhdpi" />
+    <icon src="img/android/mimap-xxxhdpi/ic_launcher.png" platform="android" qualifier="fr-xxhdpi" />
 
     <!-- iPhone 6 / 6+ -->
     <icon src="img/ios/iTunesArtwork.png" platform="ios" width="180" height="180" />
